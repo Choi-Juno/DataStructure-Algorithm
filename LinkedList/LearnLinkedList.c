@@ -18,3 +18,8 @@ Node *SLL_CreateNode(ElementType NewData)
 
   return NewNode; // 노드의 주소를 반환한다.
 }
+
+void SLL_DestroyNode(Node *Node)
+{
+  free(Node);
+}
